@@ -1,0 +1,300 @@
+<div id="mySidenav" class="sidenav">
+  <div class="closebtn" (click)="closeNav()">×</div>
+  <app-navigation></app-navigation>
+</div>
+
+
+<div fxLayout="column" fxLayoutGap="100px">
+  <!--  header-->
+  <div class="main-header pb-4 position-relative" fxLayout="column" fxLayoutAlign="space-between none">
+    <div class="overlay pt-3 ">
+      <div class="container position-relative">
+        <div class="test-logo p-3 fit-content">UI/UX TEST</div>
+        <div class="w-100" fxLayoutAlign="center start">
+          <div class="header-main-text">TEXT</div>
+        </div>
+        <img fxHide.lt-sm class="position-absolute car" src="assets/Car.png" alt="car">
+      </div>
+    </div>
+    <div class="w-100" fxLayout="row">
+      <div class="count-card color-white" fxHide.lt-md><span
+        style="font-weight: 700;font-size: 53px !important;color: rgba(255, 255, 255, 0.83);">500+</span><br>satisfied
+        patrons
+      </div>
+      <div class="w-100" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <div class="header-text color-white">Lorem ipsum dolor sit amet, Vivamus</div>
+        <div fxLayout="row" fxLayoutGap="10px">
+          <div class="position-relative description color-white">View Plans
+            <div class="underline-box"></div>
+          </div>
+          <img src="assets/Arrow.png" alt="arrow" style="object-fit: contain"></div>
+      </div>
+    </div>
+    <div class="side-bar position-absolute" fxLayout="column" fxLayoutAlign="space-between center" style="right: 0">
+      <button class="menu-circle" fxLayoutAlign="center center" (click)="openNav()">Me<br>&nbsp; nu</button>
+      <div fxLayout="column" fxLayoutGap="10px" class="color-white">
+        <div class="social-links color-white">Fb.</div>
+        <div class="social-links color-white">In.</div>
+        <div class="social-links color-white">Tw.</div>
+        <div class="social-links color-white">Ws.</div>
+        <div class="social-links color-white">Ln.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" fxLayout="column" fxLayoutGap="50px">
+    <!-- About us -->
+    <div  fxLayout="column" fxLayoutGap="20px" class="flex-center">
+      <h3>About Us</h3>
+      <div class="description text-center">
+        Lorem ipsum dolor sit amet, consectetur
+      </div>
+      <div fxLayout="row wrap" class="flex-center">
+        <div fxLayout="column" fxLayoutGap="20px"
+          class="p-3 about-card position-relative"
+        >
+          <img fxHide.lt-md src="assets/Rectangle%20abstract%20background%202.png" alt="filler" class="position-absolute" style="left: -212px;bottom: -62px;">
+          <h3 class="color-white line-normal fit-content w-50 text-left">
+            Plan Card <br/>One
+          </h3>
+          <button class="color-white about-button">View Plans</button>
+          <img src="assets/Card car.png" alt="car" class="about-card-image"/>
+          <img
+            src="assets/Car stars in card.png"
+            alt="stars"
+            class="card-stars"
+          />
+          <img
+            src="assets/Line graphics in card.png"
+            alt="line"
+            class="line"
+          />
+        </div>
+
+        <div
+          fxLayout="column" fxLayoutGap="20px"
+          class=" p-3 about-card position-relative"
+        >
+          <h3 class="color-white line-normal fit-content w-50 text-left">
+            Plan Card <br/>Two
+          </h3>
+          <button class="color-white about-button">View Plans</button>
+          <img src="assets/Card car.png" alt="car" class="about-card-image"/>
+          <img
+            src="assets/Car stars in card.png"
+            alt="stars"
+            class="card-stars"
+          />
+          <img
+            src="assets/Line graphics in card.png"
+            alt="line"
+            class="line"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- What we provide -->
+    <div fxLayout="column" fxLayoutGap="60px" class="flex-center">
+      <div fxLayout="column" fxLayoutGap="20px" class="flex-center">
+        <h3>What we provide</h3>
+        <div class="description text-center">
+          Lorem ipsum dolor sit amet, consectetur
+        </div>
+      </div>
+      <div fxLayout="row" fxLayout.lt-md="column-reverse" fxLayoutAlign.lt-md="center center" fxLayoutGap.lt-md="50px" fxLayoutGap="150px" class="flex-center">
+        <div fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center none">
+          <div fxLayout="row" fxLayoutGap="30px">
+            <img fxHide.lt-md
+              src="assets/What we provide icons.png"
+              alt="icons"
+              style="height: 100%"
+            />
+            <div fxLayout="column">
+              <h4>Lorem ipsum dolor</h4>
+              <div class="provide-description">
+                Vivamus fermentum lorem varius lectus aliquet
+              </div>
+              <hr/>
+              <h4>Lorem ipsum dolor</h4>
+              <div class="provide-description">
+                Vivamus fermentum lorem varius lectus aliquet
+              </div>
+              <hr/>
+              <h4>Lorem ipsum dolor</h4>
+              <div class="provide-description">
+                Vivamus fermentum lorem varius lectus aliquet
+              </div>
+              <hr/>
+              <h4>Lorem ipsum dolor</h4>
+              <div class="provide-description">
+                Vivamus fermentum lorem varius lectus aliquet
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative">
+          <img fxHide.lt-md src="assets/Rectangle%20abstract%20background%202.png" alt="filler" class="position-absolute" style="top: -58px; right: -65px;">
+        <img
+          src="assets/What we provide image.png"
+          alt="beeone_image"
+          class="image-provide position-relative"
+        /></div>
+      </div>
+    </div>
+
+    <!-- Our Benefits -->
+    <div fxLayout="column" fxLayoutGap="60px" class="flex-center">
+      <div fxLayout="column" fxLayoutGap="20px" class="flex-center">
+        <h3>Our Benefits</h3>
+        <div class="description text-center">
+          Vivamus fermentum lorem varius lectus aliquet
+        </div>
+      </div>
+      <div fxLayout="row wrap" class="flex-center">
+        <div class="benefit-card position-relative flex-center">
+          <div class="benefit-number">1</div>
+          <div class="benefit-text">Lorem ipsum</div>
+        </div>
+        <div class="benefit-card position-relative flex-center">
+          <div class="benefit-number">2</div>
+          <div class="benefit-text">Lorem ipsum</div>
+        </div>
+
+        <div class="benefit-card position-relative flex-center">
+          <div class="benefit-number">3</div>
+          <div class="benefit-text">Lorem ipsum</div>
+        </div>
+        <div class="benefit-card position-relative flex-center">
+          <div class="benefit-number">4</div>
+          <div class="benefit-text">Lorem ipsum</div>
+        </div>
+        <div class="benefit-card position-relative flex-center">
+          <div class="benefit-number">5</div>
+          <div class="benefit-text">Lorem ipsum</div>
+        </div>
+        <div class="benefit-card position-relative flex-center">
+          <div class="benefit-number">6</div>
+          <div class="benefit-text">Lorem ipsum</div>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <!-- Lorem ipsum  -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="30px" style="padding: 0 50px">
+      <div class="position-relative">
+        <img fxHide.lt-md class="position-absolute" src="assets/Rectangle%20abstract%20background.png" alt="filler" style="bottom: -46px; right: -28px; transform: rotate(61deg);">
+      <img
+        src="assets/What we provide image.png"
+        alt="provide-image"
+        class="image-box position-relative"
+      /></div>
+      <div fxLayout="column" fxLayoutGap="30px" class="flex-center" fxLayoutAlign.lt-md="center center">
+        <h3 class="text-left" ngClass.lt-md="text-center">Lorem ipsum dolor</h3>
+        <div class="description" ngClass.lt-md="text-center">Vivamus fermentum lorem</div>
+        <div
+          class="provide-description"
+          style="width: auto; text-align: justify"  ngClass.lt-md="text-center"
+        >
+          Vivamus fermentum lorem varius lectus aliquet malesuada. Aenean quis
+          malesuada enim, a fermentum tortor. Nunc sem ante, accumsan a ante
+          vel, blandit pretium massa.
+        </div>
+        <button class="login-button fit-content">Log In</button>
+      </div>
+    </div>
+
+    <!-- download now -->
+    <div  fxLayout="row" fxLayoutGap="30px" fxLayout.lt-md="column-reverse"
+      class="w-100 flex-space-between"
+      style="padding: 0 50px"
+    >
+      <div fxLayout="column" fxLayoutGap="30px" fxLayoutAlign.lt-md="center center" class="flex-center w-50" ngClass.lt-sm="w-100">
+        <h3 class="text-left" ngClass.lt-md="text-center">Download now!</h3>
+        <div class="description" ngClass.lt-md="text-center">Make your life easier with our app</div>
+        <div
+          class="provide-description"
+          style="width: auto; text-align: justify"  ngClass.lt-md="text-center"
+        >
+          Vivamus fermentum lorem varius lectus aliquet malesuada. Aenean quis
+          malesuada enim, a fermentum tortor. Nunc sem ante, accumsan a ante
+          vel, blandit pretium massa.
+        </div>
+        <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign.lt-md="center center">
+          <img src="assets/app-store.png" alt="app-store"/>
+          <img src="assets/play-store.png" alt="play-store"/>
+        </div>
+      </div>
+      <div class="position-relative">
+        <img fxHide.lt-md src="assets/Phone%20mockup%20background.png" alt="filler" class="position-absolute" style="bottom:0; right: -127px">
+        <img fxHide.lt-md src="assets/Phone%20mockup%20qube%202.png" alt="filler" class="position-absolute" style="bottom: 30px; left: -95px;">
+        <img fxHide.lt-md src="assets/Phone%20mockup%20cube%201.png" alt="filler" class="position-absolute" style="top: 74px; right: -84px;">
+      <img
+        src="assets/Phone mockup.png"
+        alt="provide-image"
+        class="position-relative"
+        style="z-index: 1"
+      /></div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <!-- <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(6, 55, 149, 1)" offset="0%"></stop><stop stop-color="rgba(0, 26, 76, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,196L80,179.7C160,163,320,131,480,106.2C640,82,800,65,960,65.3C1120,65,1280,82,1440,106.2C1600,131,1760,163,1920,155.2C2080,147,2240,98,2400,114.3C2560,131,2720,212,2880,269.5C3040,327,3200,359,3360,383.8C3520,408,3680,425,3840,416.5C4000,408,4160,376,4320,310.3C4480,245,4640,147,4800,147C4960,147,5120,245,5280,310.3C5440,376,5600,408,5760,351.2C5920,294,6080,147,6240,106.2C6400,65,6560,131,6720,187.8C6880,245,7040,294,7200,285.8C7360,278,7520,212,7680,196C7840,180,8000,212,8160,261.3C8320,310,8480,376,8640,383.8C8800,392,8960,343,9120,285.8C9280,229,9440,163,9600,163.3C9760,163,9920,229,10080,253.2C10240,278,10400,261,10560,261.3C10720,261,10880,278,11040,310.3C11200,343,11360,392,11440,416.5L11520,441L11520,490L11440,490C11360,490,11200,490,11040,490C10880,490,10720,490,10560,490C10400,490,10240,490,10080,490C9920,490,9760,490,9600,490C9440,490,9280,490,9120,490C8960,490,8800,490,8640,490C8480,490,8320,490,8160,490C8000,490,7840,490,7680,490C7520,490,7360,490,7200,490C7040,490,6880,490,6720,490C6560,490,6400,490,6240,490C6080,490,5920,490,5760,490C5600,490,5440,490,5280,490C5120,490,4960,490,4800,490C4640,490,4480,490,4320,490C4160,490,4000,490,3840,490C3680,490,3520,490,3360,490C3200,490,3040,490,2880,490C2720,490,2560,490,2400,490C2240,490,2080,490,1920,490C1760,490,1600,490,1440,490C1280,490,1120,490,960,490C800,490,640,490,480,490C320,490,160,490,80,490L0,490Z"></path></svg> -->
+  <div class="footer">
+    <div class="container">
+      <div class="w-100 pr-3" fxLayout="row" fxLayoutAlign.lt-sm="center center" fxLayout.lt-sm="column" fxLayoutGap.lt-sm="40px" fxLayoutAlign="space-between start">
+        <div class="test-logo p-3">UI/UX TEST LOGO</div>
+        <div fxLayout="row" fxLayoutGap="150px" fxLayoutGap.lt-sm="50px" fxLayout.lt-sm="column" class="color-white px-3">
+          <div fxLayout="column" fxLayoutGap="20px">
+            <div class="footer-head">Extra Links</div>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <img src="assets/Arrow.png" alt="arrow" class="arrow"/>
+              <div class="footer-links">Home</div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <img src="assets/Arrow.png" alt="arrow" class="arrow"/>
+              <div class="footer-links">Contact us</div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <img src="assets/Arrow.png" alt="arrow" class="arrow"/>
+              <div class="footer-links">Careers</div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <img src="assets/Arrow.png" alt="arrow" class="arrow"/>
+              <div class="footer-links">Plans</div>
+            </div>
+          </div>
+
+          <div fxLayout="column" fxLayoutGap="20px">
+            <div class="footer-head">Address</div>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <img
+                src="assets/location-icon.png"
+                alt="location"
+                class="arrow"
+              />
+              <div class="footer-links">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Vivamus
+                fermentum
+                lorem
+              </div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <img src="assets/call-icon.png" alt="call" class="arrow"/>
+              <div class="footer-links">8782378193923,172397123</div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <img
+                src="assets/message-icon.png"
+                alt="message"
+                class="arrow"
+              />
+              <div class="footer-links">Test@gmail</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
